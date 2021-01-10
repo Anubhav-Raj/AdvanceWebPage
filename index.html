@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left, #fff 85%, #c3f5ff 20%);
+}  
+.nav{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top, #fff 80%, #c3f5ff 20%);
+    
+}
+
+ ul{
+     width: 60%;
+display: flex;
+justify-content:space-around;
+align-items: center;
+list-style: none;
+
+}
+.logo{
+    width: 40%;
+    color: #fff;
+    background-image: linear-gradient(#8d98e3 40%,#854fee 60%);
+    padding-left: 100px;
+    box-sizing: border-box; 
+}
+.logo h1{
+text-transform: uppercase;
+font-size: 1.6rem;
+animation: aagepiche 2s linear infinite;
+animation-direction: alternate;
+}
+@keyframes aagepiche{
+    from{padding-left: 100px;}
+
+to{padding-right: 100px;}
+}
+.navlist a{
+    
+     text-decoration: none;
+     text-transform: uppercase;
+     color: #000;
+     font-weight: 900;
+     font-size: 17px;
+     position: relative;
+     
+}
+ #first{
+    color: #4458dc;
+}
+.navlist a:before
+{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #4458dc;
+    transition: all 0.4s linear;
+}
+.navlist a:hover::before
+{
+    width: 100%;
+}
+.main{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    
+
+}
+.rightside{
+border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+background-color: #e8fbff; 
+}
+.rightside img{
+    max-width: 450px; 
+    width: 400px;
+    height: auto;
+}
+.leftside{
+    color: #000;
+    text-transform: uppercase;
+}
+.leftside h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.leftside h3::after{
+    content: "";
+    width: 450px;
+    height: 3px;
+    position: absolute;  
+    top:43%;
+    left: 24.2%;
+    background: #000;
+}
+.leftside h1{ 
+    margin-top: 20px;
+    font-size: 50px;
+    margin-bottom: 25px;
+
+}
+.leftside h2{
+    margin-bottom: 35px;
+    font-weight: 500;
+    word-spacing:2 px;  
+}
+.leftside .btn1,.btn2{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 50px;
+
+
+}
+.leftside  .btn1{
+    
+    color:#fff;
+    background-image:  linear-gradient(to right,#4458dc 0%,#854fee 100%);
+    border-radius: double 2px transparent;
+    box-shadow: 0px 10px 30px rgba(118, 85, 255, 0.3);
+}
+.leftside .btn2{
+    
+    border :2px solid #4458dc;
+    color: #222;
+    background-color: #fff;
+    box-shadow: none;
+
+}
+.leftside .btn1:hover
+{
+    border :2px solid #4458dc;
+    color: #222;
+    background-color: #fff;
+    box-shadow: none;
+    background-image: none;
+
+}
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="nav">
+            <div class="logo">
+                <h1>Anuu Technical</h1>
+            </div>
+            <ul>
+                <li class="navlist"><a href="#" id="first">Home</a></li>
+                <li class="navlist"><a href="#">Services</a></li>
+                <li class="navlist"><a href="#">Gallery</a></li>
+                <li class="navlist"><a href="#">portfolio</a></li>
+                <li class="navlist"><a  href="#">About</a></li>
+                <li class="navlist"><a href="#">Contect</a></li>
+            </ul>
+
+        </div>
+        <nav class="main">
+            <div class="leftside">
+                <h3>Hello</h3>
+                <h1>I am Anubhav Rajput</h1>
+                <h2>web Developer and Youtuber</h2>
+                <a href="#" class="btn1">Hire me</a>
+                <a href="#" class="btn2">contect me</a>
+            </div>
+            <div class="rightside">
+                <img src="img/a.jpg" alt="photo">
+            </div>
+        </nav>
+    </section>
+</body>
+
+</html>
